@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+h1{
+    font-family: "Syne", sans-serif;
+    font-weight: 500;
+    line-height: 68px;
+    margin: 10px 0;
+    font-size: 80px;
+    text-transform: uppercase;
+}
+body{
+    font-family: "Syne", sans-serif;
+}
+h1 span{
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+}
+
+.glitch{
+    
+}
+.glitch img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    border-radius: 40px;
+  
+}
+.glitch__layers {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.glitch__layer:nth-child(1) {
+    -webkit-transform: translateX(-5%);
+    transform: translateX(-5%);
+    -webkit-animation: glitch-anim-1 2s infinite linear alternate;
+    animation: glitch-anim-1 2s infinite linear alternate;
+}
+.glitch__layer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url("../src/Assets/Images/me.jpeg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.glitch__layer:nth-child(2) {
+    -webkit-transform: translateX(3%) translateY(3%);
+    transform: translateX(3%) translateY(3%);
+    -webkit-animation: glitch-anim-2 2.3s -.8s infinite linear alternate;
+    animation: glitch-anim-2 2.3s -.8s infinite linear alternate;
+}
+.glitch__layer:nth-child(3) {
+    -webkit-transform: translateX(5%);
+    transform: translateX(5%);
+    -webkit-animation: glitch-anim-flash 1s infinite linear;
+    animation: glitch-anim-flash 1s infinite linear;
+}
+@keyframes glitch-anim-1 {
+    0% {
+        -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 5%, 0 5%);
+                clip-path: polygon(0 0%, 100% 0%, 100% 5%, 0 5%);
+    }
+
+    10% {
+        -webkit-clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
+                clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
+    }
+
+    20% {
+        -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
+                clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
+    }
+
+    30% {
+        -webkit-clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
+                clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
+    }
+
+    40% {
+        -webkit-clip-path: polygon(0 35%, 100% 35%, 100% 35%, 0 35%);
+                clip-path: polygon(0 35%, 100% 35%, 100% 35%, 0 35%);
+    }
+
+    50% {
+        -webkit-clip-path: polygon(0 45%, 100% 45%, 100% 46%, 0 46%);
+                clip-path: polygon(0 45%, 100% 45%, 100% 46%, 0 46%);
+    }
+
+    60% {
+        -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 70%, 0 70%);
+                clip-path: polygon(0 50%, 100% 50%, 100% 70%, 0 70%);
+    }
+
+    70% {
+        -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+                clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+    }
+
+    80% {
+        -webkit-clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+                clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+    }
+
+    90% {
+        -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+                clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+    }
+
+    100% {
+        -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 70%, 0 70%);
+                clip-path: polygon(0 60%, 100% 60%, 100% 70%, 0 70%);
+    }
+}
+@keyframes glitch-anim-2 {
+    0% {
+        -webkit-clip-path: polygon(0 15%, 100% 15%, 100% 30%, 0 30%);
+                clip-path: polygon(0 15%, 100% 15%, 100% 30%, 0 30%);
+    }
+
+    15% {
+        -webkit-clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%);
+                clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%);
+    }
+
+    25% {
+        -webkit-clip-path: polygon(0 8%, 100% 8%, 100% 20%, 0 20%);
+                clip-path: polygon(0 8%, 100% 8%, 100% 20%, 0 20%);
+    }
+
+    30% {
+        -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
+                clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
+    }
+
+    45% {
+        -webkit-clip-path: polygon(0 45%, 100% 45%, 100% 45%, 0 45%);
+                clip-path: polygon(0 45%, 100% 45%, 100% 45%, 0 45%);
+    }
+
+    50% {
+        -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 57%, 0 57%);
+                clip-path: polygon(0 50%, 100% 50%, 100% 57%, 0 57%);
+    }
+
+    65% {
+        -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
+                clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
+    }
+
+    75% {
+        -webkit-clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+                clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+    }
+
+    80% {
+        -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+                clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+    }
+
+    95% {
+        -webkit-clip-path: polygon(0 45%, 100% 45%, 100% 60%, 0 60%);
+                clip-path: polygon(0 45%, 100% 45%, 100% 60%, 0 60%);
+    }
+
+    100% {
+        -webkit-clip-path: polygon(0 11%, 100% 11%, 100% 15%, 0 15%);
+                clip-path: polygon(0 11%, 100% 11%, 100% 15%, 0 15%);
+    }
+}
+@keyframes glitch-anim-flash {
+    0% {
+        opacity: .2;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    }
+
+    30%,
+    100% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
+
+.main-title::after{
+    content: "";
+    background-color:rgb(196, 240, 0) ;
+    height: 4px;
+    width: 5%;
+    position: absolute;
+    border-radius: 20px;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+}
+.icon{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    margin:10px auto;
+}
+.myExperience  .exp-cont{
+    height: 500px;
+    min-height: 700px;
+    max-height: 1000px;
+}
+.proj-item{
+    overflow: hidden;
+}
+.proj-item img{
+    transition: .25s ease-in-out;
+
+}
+.proj-item:hover img{
+    transform: scale(1.2);
+}
+.overlay-proj
+{
+    background-color: #141c3a;
+    opacity: 0;
+    transition: .45s ease-in-out;
+}
+.proj-item:hover .overlay-proj{
+    opacity: 1;
+}
+.btn-proj{
+    border-color: #6E07F3;
+    border-width: 2px;
+    border-style: solid;
+    display: block;
+    transition: .45s ease-in-out;
+
+}
+.btn-proj:hover{
+    background-color:#6E07F3 ;
+}
